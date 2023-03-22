@@ -53,7 +53,7 @@
 
 
 .tuclase {
-    position: initial;
+    position: relative;
     text-align: center;
     font-family: Arial Black;
     font-weight: bold;
@@ -61,3 +61,43 @@
     color: navy;
     text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
+
+.section-legible {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 100%;
+  }
+  
+  .divertido {
+    font-size: 48px;
+    line-height: 0px; /* Ajusta la línea de base de la fuente */
+    text-align: center;
+    font-family: 'Impact', sans-serif;
+    margin: 50px 0;
+    padding-bottom: 0%; /* Agrega un padding en la parte inferior */
+    transform-style: preserve-3d;
+    animation-name: mover;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes mover {
+    0% {
+      transform: perspective(200px) translate3d(0, 0, 0);
+      color: #1e9de7;
+    }
+    50% {
+      transform: perspective(200px) translate3d(0, 5px, 5px) rotateX(-10deg);
+      color: #0e87f8;
+    }
+    100% {
+      transform: perspective(200px) translate3d(0, 0, 0) rotateX(0deg);
+      color: #129bc5;
+    }
+  }
+  
